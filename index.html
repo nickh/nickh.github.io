@@ -1,0 +1,17 @@
+---
+layout: default
+title: Nick Hengeveld
+---
+
+{% for post in site.posts %}
+  <div class="post teaser">
+    <div class="header">
+      <span class="date">{{ post.date | date:"%B %d, %Y" }}</span>
+      <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+    </div>
+    <div class="content">
+      {{ post.content | truncatewords:100 }}
+      <a href="{{ post.url }}">More</a>
+    </div>
+  </div>
+{% endfor %}

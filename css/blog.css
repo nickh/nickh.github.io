@@ -1,0 +1,64 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #444;
+  margin: 0px;
+}
+h1,h2 { font-weight: bold; }
+h1,h2 > a {
+  text-decoration: none;
+  color: #444;
+}
+
+div.blog {
+  width: 100%;
+  padding-top: 30px;
+  background: -webkit-linear-gradient(top, #bbb, white);
+  background: -moz-linear-gradient(top, #bbb, white);
+}
+div.blog > div.overview {
+  float: left;
+  padding-left: 20px;
+  padding-right: 5px;
+  width: 220px;
+  color: #666;
+  border-right: 1px solid #ccc;
+}
+div.blog > div.overview > div.header > h2 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+div.blog > div.overview > div.header > p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 0px;
+}
+div.blog > div.overview > div.dogs > ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+div.blog > div.overview > div.footer {
+  padding-top: 20px;
+  font-size: 0.9em;
+}
+
+div.blog > div.posts {
+  margin-left: 260px;
+  width: 640px;
+}
+div.blog > div.posts > div.post > div.header {
+}
+div.blog > div.posts > div.post > div.header > a {
+  text-decoration: none;
+  color: #444;
+}
+div.blog > div.posts > div.post > div.header h3 {
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+div.blog > div.posts > div.post > div.content > p {
+  line-height: 1.5em;
+}
+div.blog > div.posts > div.teaser > div.content > p {
+  display: inline;
+}
