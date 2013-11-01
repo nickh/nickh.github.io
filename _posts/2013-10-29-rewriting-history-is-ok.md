@@ -6,7 +6,7 @@ category: work
 tags: github
 ---
 
-I've been a fan of git for a long time because of the workflows that it makes not just possible
+I've been a long-time fan of git because of the workflows that it makes not just possible
 but easy. I recently dealt with an app issue that highlights why these features make me
 smile.
 
@@ -14,9 +14,22 @@ The reported issue was that certain requests were failing after a 30-60 second t
 sure what the problem was or how I'd be fixing it, but I suspected that it would take some trial
 and error, so I made myself a place to play around:
 
-````
-git fetch
-git checkout -b faster_updates origin/master
+````sh
+nictocat:app nickh$ git fetch
+remote: Counting objects: 1187, done.
+remote: Compressing objects: 100% (394/394), done.
+remote: Total 1083 (delta 769), reused 987 (delta 676)
+Receiving objects: 100% (1083/1083), 3.89 MiB | 1.90 MiB/s, done.
+Resolving deltas: 100% (769/769), completed with 59 local objects.
+From https://github.com/github/slumlord
+   bd736bf..f7d42be  master     -> origin/master
+
+nictocat:app nickh$ git rebase origin/master
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to origin/master.
+
+nictocat:app nickh$ git checkout -b faster_updates
+Switched to a new branch 'faster_updates'
 ````
 
 At this point, I felt free to go crazy debugging this thing - knowing that if I needed to put
@@ -27,8 +40,10 @@ I started by adding some profiling calls and found a few areas where caching val
 improve performance. I wasn't sure yet whether I'd hit the root cause but I was starting to make
 progress, so I made a checkpoint so it would be easy to get back to this point:
 
-````
-git commit -am wip
+````sh
+nictocat:app nickh$ git commit -am wip
+[faster_updates e4b5751] wip
+ 2 files changed, 1 insertion(+), 2 deletions(-)
 ````
 
 I was nowhere near ready to share this with anyone. I wasn't sure I'd found everything, or even
