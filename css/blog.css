@@ -33,23 +33,6 @@ div.blog > div.overview > div.header > p {
   font-style: italic;
   margin: 0px;
 }
-div.blog > div.overview > div.dogs > ul {
-  padding-left: 0px;
-  list-style-type: none;
-}
-div.blog > div.overview > div.reading > h4 {
-  margin: 0px;
-}
-div.blog > div.overview > div.reading > ul {
-  list-style-type: none;
-  margin: 3px 0px;
-  padding-left: 5px;
-}
-div.blog > div.overview > div.footer {
-  padding-top: 20px;
-  font-size: 0.9em;
-}
-
 div.blog > div.posts {
   margin-left: 260px;
   width: 640px;
