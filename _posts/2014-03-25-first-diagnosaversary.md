@@ -14,7 +14,7 @@ on everything that's happened.
 ### tl;dr
 
 By the time they found it, there was a lot going on. I'd lost 40 pounds and couldn't
-eat much, was short of breath often, and had a heartbeat that people could hear from
+eat much, was often short of breath, and had a heartbeat that people could hear from
 several feet away. A visit to a cardiologist found fluid around my heart and some
 questionable stuff happening between my heart and lungs. He suggested that I admit
 myself to the hospital that day. My first CT scan showed a mass that we've come to
