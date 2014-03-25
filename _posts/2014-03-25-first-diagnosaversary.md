@@ -4,6 +4,7 @@ permalink: first-diagnosaversary.html
 title: One Year With Cancer - A Chester FAQ
 category: personal
 tags: cancer
+description: Today marks one year since doctors found a grapefruit-sized germ cell tumor in my chest. While my case was treatable and I feel pretty normal these days, I doubt a day has gone by that I haven't thought about it. One year in, it's kind of interesting to reflect on everything that's happened.
 ---
 
 Today marks one year since doctors found a grapefruit-sized germ cell tumor in my chest.
